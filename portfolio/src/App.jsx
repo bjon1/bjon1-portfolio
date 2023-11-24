@@ -1,12 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 
-import Navigation from './components/Navigation'
-
-import About from './components/About'
-import Work from './components/Work'
-import Resume from './components/Resume'
-
+import Navigation from './scenes/Navigation'
+import About from './scenes/About/About'
+import Work from './scenes/Work/Work'
+import Resume from './scenes/Resume/Resume'
 
 import { useRoutes } from 'react-router-dom'
 
@@ -35,7 +33,9 @@ function App() {
   return (
     <>
       <Navigation />
-      {element}
+      <div>
+        {element}
+      </div>
     </>
   )
 }

@@ -1,0 +1,62 @@
+[
+    {
+      "name": "Project 1",
+      "description": "This is the description of Project 1.",
+      "skillsUsed": ["HTML", "CSS", "JavaScript"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+1"
+    },
+    {
+      "name": "Project 2",
+      "description": "This is the description of Project 2.",
+      "skillsUsed": ["React", "Redux", "Node.js"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+2"
+    },
+    {
+      "name": "Project 3",
+      "description": "This is the description of Project 3.",
+      "skillsUsed": ["Python", "Django", "PostgreSQL"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+3"
+    },
+    {
+      "name": "Project 4",
+      "description": "This is the description of Project 4.",
+      "skillsUsed": ["Java", "Spring Boot", "MySQL"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+4"
+    },
+    {
+      "name": "Project 5",
+      "description": "This is the description of Project 5.",
+      "skillsUsed": ["C#", ".NET Core", "MongoDB"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+5"
+    },
+    {
+      "name": "Project 6",
+      "description": "This is the description of Project 6.",
+      "skillsUsed": ["Ruby", "Ruby on Rails", "SQLite"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+6"
+    },
+    {
+      "name": "Project 7",
+      "description": "This is the description of Project 7.",
+      "skillsUsed": ["JavaScript", "Vue.js", "Firebase"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+7"
+    },
+    {
+      "name": "Project 8",
+      "description": "This is the description of Project 8.",
+      "skillsUsed": ["PHP", "Laravel", "MySQL"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+8"
+    },
+    {
+      "name": "Project 9",
+      "description": "This is the description of Project 9.",
+      "skillsUsed": ["TypeScript", "Angular", "Firebase"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+9"
+    },
+    {
+      "name": "Project 10",
+      "description": "This is the description of Project 10.",
+      "skillsUsed": ["Python", "Flask", "SQLite"],
+      "image": "https://via.placeholder.com/400x300.png?text=Project+10"
+    }
+]
