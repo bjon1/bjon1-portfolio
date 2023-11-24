@@ -5,7 +5,7 @@ const Hero = () => {
     
         return(
             <div className="hero container">
-                <p className="hero-title">Hello! My name is Benjamin — A Computer Engineer interested in all things hardware and software.</p>
+                <p className="hero-title">Hi, nice to meet you! 👋 I'm a Computer Engineer interested in all things hardware and software.</p>
                 <div className="hero-subtitles">
                     <div className="hero-subtitle1">
                         <p>I'm on the lifelong quest to expand my thinking, experience, and knowledge.</p>

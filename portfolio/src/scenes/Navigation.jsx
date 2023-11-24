@@ -15,9 +15,14 @@ const Navigation = () => {
                 <Link className="nav-link" to="/about">
                     <h3>About</h3>
                 </Link>
-                <Link className="nav-link" to="/resume">
+                <a
+                    className="nav-link"
+                    href="https://docs.google.com/document/d/1mqJ5HutJ0Pk0Y_gm4Onp9F6bXE3qSM7Mw5zeJ4rMa7k/edit?usp=sharing"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
                     <h3>Resume</h3>
-                </Link>
+                </a>
             </div>
         </div>
     )
