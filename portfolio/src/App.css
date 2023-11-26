@@ -54,6 +54,18 @@ button:hover {
 
 @media screen and (max-width: 900px) {
     :root {
-        font-size: 0.75rem;
+        font-size: 0.70rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        font-size: 0.60rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        font-size: 0.45rem;
     }
 }
