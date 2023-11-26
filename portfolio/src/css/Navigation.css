@@ -16,5 +16,10 @@
     color: blue;
 }
 
+@media screen and (max-width: 900px) {
+    .nav {
+        height: 18rem;
+    }
+}
 
 

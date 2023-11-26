@@ -11,22 +11,26 @@ const Projects = () => {
      
     useEffect(() => {
         setData(projectsData)
+        document.title = "Ben Jon | Work"
+
     }, [])  
     
     return(
-        <div className="projects container">
-            <div className="projects-work">
-                {
-                    data ? data.map((project, index) => {
-                        return  <Project 
-                                    key={index} 
-                                    name={project.name}
-                                    description={project.description}
-                                    image={project.image}
-                                    skillsUsed={project.skillsUsed}                         
-                                />
-                    }) : null
-                }
+        <div className="projects">
+            <div className="container">
+                <div className="projects-work">
+                    {
+                        data ? data.map((project, index) => {
+                            return  <Project 
+                                        key={index} 
+                                        name={project.name}
+                                        description={project.description}
+                                        image={project.image}
+                                        skillsUsed={project.skillsUsed}                         
+                                    />
+                        }) : null
+                    }
+                </div>
             </div>
         </div>
     )

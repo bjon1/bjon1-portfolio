@@ -28,7 +28,27 @@ const About = () => {
   
     const handleSubmit = (event) => {
         event.preventDefault();
+        const formEle = document.querySelector("form");
+        const formDatab = new FormData(formEle);
+        fetch(
+          "https://script.google.com/macros/s/AKfycbzYxwEcf2kITuRpDeIOMserJg0egVfGP4I4d6fk6CNdoQWj1EfvWDMttw6f0i6pVcLbpw/exec",
+          {
+            method: "POST",
+            body: formDatab
+          }
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
         console.log("form submitted");
+        setName("");
+        setEmail("");
+        setMessage("");
+        alert("Message sent successfully, I'll get back to you soon!");
     };
 
     return(
@@ -49,29 +69,48 @@ const About = () => {
                 <div className="about-form-content">
                     <div className="about-form-description">
                         Reach out to me on{' '}
-                        <a className="links" href="https://www.linkedin.com/in/benjamin-jon/" target="_blank" rel="noreferrer">
+                        <a className="links" href="https://www.linkedin.com/in/ben-jon/" target="_blank" rel="noreferrer">
                             LinkedIn.
                         </a>
                         <br />
                         Check out my{' '}
-                        <a className="links" href="https://www.linkedin.com/in/ben-jon/" target="_blank" rel="noreferrer">
+                        <a className="links" href="https://docs.google.com/document/d/1mqJ5HutJ0Pk0Y_gm4Onp9F6bXE3qSM7Mw5zeJ4rMa7k/edit?usp=sharing" target="_blank" rel="noreferrer">
                             Resume.
                         </a>
+                        <br/>
                         Or, shoot me a message by filling out the form:
                     </div>
                 </div>
-                <form onSubmit={handleSubmit}>
+                <form className="form" onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
-                        <input type="text" id="name" value={name} onChange={handleNameChange} />
+                        <input 
+                            type="text" 
+                            id="name"  
+                            value={name} 
+                            name="Name"
+                            placeholder="Your Name"
+                            onChange={handleNameChange} required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email</label>
-                        <input type="text" id="email" value={email} onChange={handleEmailChange} />
+                        <input 
+                            type="text" 
+                            id="email" 
+                            value={email}  
+                            name="Email"
+                            placeholder="Your Email"
+                            onChange={handleEmailChange} required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message</label>
-                        <textarea id="message" value={message} onChange={handleMessageChange}></textarea>
+                        <textarea 
+                            type="text"
+                            id="message"
+                            name="Message" 
+                            value={message} 
+                            placeholder="Your Message"
+                            onChange={handleMessageChange} required ></textarea>
                     </div>
                     <button type="submit">Submit</button>
                 </form>

@@ -13,6 +13,26 @@
     font-weight: bold;
 }
 
+@media screen and (max-width: 900px) {
+
+    .hero-title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-title2 {
+        margin-bottom: 2rem;
+    }
+
+    .hero {
+        gap: 2rem;
+    }
+}
+
+.hero-title1, .hero-title2, .hero-title3 {
+    display: inline;
+}
+
 .hero-subtitles {
     font-size: 1.2em;
     max-width: 65vw;
@@ -21,5 +41,6 @@
 
 .hero-subtitle1 {
     font-weight: bold;
+    margin-bottom: 0.25rem;
 }
 
