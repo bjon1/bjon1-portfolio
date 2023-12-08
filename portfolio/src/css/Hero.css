@@ -8,29 +8,30 @@
 
 .hero-title {
     font-size: 2.5em;
-    max-width: 1035px;
+    max-width: 65rem;
     color: #272727;
     font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
 
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
     .hero-title {
         display: flex;
         flex-direction: column;
+        gap: 2vh;
     }
 
-    .hero-title2 {
-        margin-bottom: 2rem;
+    .hero-subtitles{
+        margin-bottom: 1vh;
     }
 
-    .hero {
-        gap: 2rem;
-    }
-}
 
-.hero-title1, .hero-title2, .hero-title3 {
-    display: inline;
 }
 
 .hero-subtitles {

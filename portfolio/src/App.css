@@ -52,20 +52,26 @@ button:hover {
     background-color: #090307;
 }
 
+@media screen and (min-width: 1920px) {
+    :root {
+        font-size: calc(1rem + 0.2vw);
+    }
+}
+
 @media screen and (max-width: 900px) {
     :root {
-        font-size: 0.70rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     :root {
-        font-size: 0.60rem;
+        font-size: 0.80rem;
     }
 }
 
 @media screen and (max-width: 400px) {
     :root {
-        font-size: 0.45rem;
+        font-size: .60rem;
     }
 }

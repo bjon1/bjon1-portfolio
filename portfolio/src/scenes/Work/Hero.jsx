@@ -8,11 +8,9 @@ const Hero = () => {
                 <div className="hero-title">
                     <div className="hero-title1">
                         Hi, nice to meet you! 👋 
-                    </div>
-                    <div className="hero-title2">
                         I'm a Computer Engineer, {' '}
                     </div>
-                    <div className="hero-title3">
+                    <div className="hero-title2">
                         interested in all things hardware and software.
                     </div>
                 </div>
