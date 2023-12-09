@@ -18,6 +18,12 @@
 
 @media screen and (max-width: 1024px) {
     .nav {
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
         height: 20vh;
     }
 }
